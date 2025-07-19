@@ -1,0 +1,47 @@
+<svg width="1728" height="565" viewBox="0 0 1728 565" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_653_85)">
+<mask id="mask0_653_85" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-3" y="-64" width="1731" height="1091">
+<g clip-path="url(#clip1_653_85)">
+<path d="M906.71 322.841C906.71 509.862 783.056 661.473 630.521 661.473C477.985 661.473 -475.039 5.51601 -475.039 -181.506C-475.039 -368.527 894.271 -111.057 1046.81 -111.057C1199.34 -111.057 906.71 135.819 906.71 322.841Z" fill="url(#paint0_linear_653_85)"/>
+<path d="M1327.29 323.354C1738.86 695.071 1548.74 508.268 1902.24 498.857C1957.69 509.539 2051.83 510.047 1984.76 426.618C1900.92 322.332 1927.94 248.674 1823.16 135.054C1718.38 21.4332 1654.57 -94.003 1496.38 -274.713C1338.2 -455.423 1326.03 -306.458 1147.69 -320.58C969.357 -334.701 1050.7 -312.276 804.639 -50.0733C558.582 212.129 915.721 -48.3641 1327.29 323.354Z" fill="#D9D9D9"/>
+</g>
+</mask>
+<g mask="url(#mask0_653_85)">
+<line x1="-104.013" y1="345.353" x2="1815.71" y2="345.353" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="-104.013" y1="550.292" x2="1815.71" y2="550.292" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="-104.013" y1="140.411" x2="1815.71" y2="140.411" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="-104.013" y1="242.882" x2="1815.71" y2="242.882" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="-104.013" y1="447.821" x2="1815.71" y2="447.821" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="-104.013" y1="37.9402" x2="1815.71" y2="37.9402" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="775.795" y1="-100.554" x2="775.794" y2="1382.06" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="365.911" y1="-100.554" x2="365.91" y2="1382.06" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="1185.67" y1="-100.554" x2="1185.67" y2="1382.06" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="1595.56" y1="-100.554" x2="1595.56" y2="1382.06" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="160.969" y1="-100.554" x2="160.968" y2="1382.06" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="980.73" y1="-100.554" x2="980.73" y2="1382.06" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="570.852" y1="-100.554" x2="570.852" y2="1382.06" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="1390.61" y1="-100.554" x2="1390.61" y2="1382.06" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="58.5004" y1="-100.554" x2="58.5003" y2="1382.06" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="878.263" y1="-100.554" x2="878.262" y2="1382.06" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="468.379" y1="-100.554" x2="468.378" y2="1382.06" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="1288.15" y1="-100.554" x2="1288.15" y2="1382.06" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="1698.02" y1="-100.554" x2="1698.02" y2="1382.06" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="263.442" y1="-100.554" x2="263.442" y2="1382.06" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="1083.2" y1="-100.554" x2="1083.2" y2="1382.06" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="673.321" y1="-100.554" x2="673.32" y2="1382.06" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+<line x1="1493.08" y1="-100.554" x2="1493.08" y2="1382.06" stroke="#B2B2B2" stroke-opacity="0.21" stroke-width="1.6011"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_653_85" x1="184.614" y1="-87.8412" x2="761.811" y2="219.57" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_653_85">
+<rect width="1736" height="565" fill="white" transform="translate(-8)"/>
+</clipPath>
+<clipPath id="clip1_653_85">
+<rect width="1730.71" height="1089.77" fill="white" transform="translate(-2.71415 -63.0238)"/>
+</clipPath>
+</defs>
+</svg>
