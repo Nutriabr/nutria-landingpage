@@ -1,7 +1,7 @@
-const hamburger = document.getElementById('hamburger');
+const hamburguer = document.getElementById('hamburguer');
 const navbar = document.getElementById('navbar');
 
-hamburger.addEventListener('click', () => {
+hamburguer.addEventListener('click', () => {
   navbar.classList.toggle('active');
-  hamburger.classList.toggle('open');
+  hamburguer.classList.toggle('open');
 });

@@ -19,30 +19,29 @@ body {
   background: #fff;
 }
 
-/* Header e menu hamburger */
+/* Header e menu hamburguer */
 header {
   position: fixed;
-  margin: 0 auto;
-  padding: 1rem;
+  top: 0;
+  padding: 1rem 4rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1.25rem 0;
   border-bottom: 1px solid #E6E6E6;
   z-index: 1;
   background-color: white;
   width: 100%;
 }
 
-.hamburger {
+.hamburguer {
   display: none;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
 }
 
-.hamburger span {
+.hamburguer span {
   width: 25px;
   height: 3px;
   background: #EE7026;
@@ -92,23 +91,17 @@ header {
   padding: 1rem;
 }
 
-.hamburger.open span:nth-child(1) {
+.hamburguer.open span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
 
-.hamburger.open span:nth-child(2) {
+.hamburguer.open span:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger.open span:nth-child(3) {
+.hamburguer.open span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
-
-
-/* .background-img {
-  width: 100%;
-  display: block;
-} */
 
 /* Estilização da home / hero */
 
@@ -127,6 +120,7 @@ header {
 }
 
 .hero-content {
+  justify-items: center;
   margin: auto;
   text-align: center;
   border-radius: 10px;
@@ -205,7 +199,6 @@ header {
   color: #666;
 }
 
-
 /* Estilização da plans section */
 .plans {
   margin-top: 4rem;
@@ -227,7 +220,6 @@ header {
 .plans-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  /* padding: 0 10rem; */
   gap: 50px;
   padding: 0 10rem;
   justify-items: center;
@@ -257,15 +249,6 @@ header {
   justify-self: center;
   padding-top: 50px;
 }
-
-/* #basic-plan,
-#intermediary-plan {
-  margin-top: 40px;
-} */
-
-/* #profissional-plan {
-  margin-bottom: 20px;
-} */
 
 .plans-license {
   color: #9A9A9A;
@@ -299,7 +282,6 @@ header {
 .plans-ind:hover {
   transform: scale(1.05);
   cursor: pointer;
-  /* box-shadow: 0 0 15px #f06e2387; */
 }
 
 .btn-demonstration:hover {
@@ -329,6 +311,8 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Estilização da seção de citação */
 
 .quotation {
   background-image: url('../images/bg_grid_quotation.svg');
@@ -491,14 +475,30 @@ footer {
   margin: 0;
 }
 
+.features-ind p,
+.plans-info h1,
+.hero-content p,
+.hero-content h1,
+.hero-content h2 {
+  word-break: break-word;
+  hyphens: auto;
+}
+
 @media (max-width: 768px) {
-  .hamburger {
-    display: flex;
+  .hero {
+    padding: 1rem 0.5rem;
+    margin-top: 5rem;
+    min-height: 220px;
+    background-image: none;
   }
 
-  .plans-grid {
-    padding: 0;
-    gap: 30px;
+  .hero-content {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .hamburguer {
+    display: flex;
   }
 
   .navbar {
@@ -535,15 +535,133 @@ footer {
   }
 
   .hero-content {
+    margin-top: 2rem;
     max-width: 90%;
   }
 
+
+  .features-grid,
+  .plans-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    gap: 20px;
+  }
+
+  .features-ind,
+  .plans-ind {
+    padding: 2rem 1rem;
+  }
+
+  .plans-grid {
+    padding: 0 1rem;
+    gap: 20px;
+  }
+
+  .plans-ind {
+    padding-inline: 10px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  .plans-info h1 {
+    font-size: 1rem;
+  }
+
+  .plans-price {
+    font-size: 1.3em;
+  }
+
+  .btn-primary,
+  .btn-outline,
+  .btn-demonstration {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* CONTATO */
+  .contact-title {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
   .contact-form {
-    max-width: 80%;
-    gap: 15px;
+    max-width: 90%;
+    gap: 10px;
+    padding: 0 1vw;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-button {
+    font-size: 1em;
+    padding: 12px;
+  }
+
+  .footer-center {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 10px;
+    gap: 24px;
+  }
+
+  .footer-right {
+    text-align: left;
+    margin-top: 16px;
   }
 
   .footer-right .logo {
     margin-top: 24px;
+    font-size: 20px;
   }
+
+  .footer-column h4,
+  .footer-column a {
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .hero-content h1,
+  .hero-content h2 {
+    font-size: 1.1rem;
+    word-break: break-word;
+  }
+
+  .hero-content p {
+    font-size: 0.98rem;
+    width: 100%;
+    padding: 0 2vw;
+    margin-left: 0;
+    margin-right: 0;
+    word-break: break-word;
+  }
+
+  .quotation-content {
+    font-size: 1.1rem;
+    padding: 0 1vw;
+  }
+
+  #quotation-mark {
+    font-size: 2.5rem;
+  }
+
+  #author {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+  }
+
+
 }
