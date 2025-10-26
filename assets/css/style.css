@@ -89,6 +89,9 @@ header .logo {
   margin-left: 0.5rem;
   cursor: pointer;
 }
+#download-app{
+  color: var(--color-primary);
+}
 
 /* Estado mobile */
 .navbar.active {
@@ -125,7 +128,7 @@ header .logo {
   max-width: 1200px;
 }
 
-.hero-text-content h1 {
+#title-hero {
   margin: 0 auto;
   text-align: center;
   font-size: 2.8rem;
@@ -210,14 +213,27 @@ header .logo {
 }
 
 .features-ind h3 {
-  font-weight: 500;
+  font-weight: 700;
   color: #edf2f6;
   margin-bottom: 12px;
-  text-align: left;
+  text-align: center;
+  
 }
 .features-ind p {
   color: #e4e4e4;
   text-align: left;
+}
+.img-features{
+  width: 10%;
+}
+ #create-tables img{
+  width: 8%;
+}
+#comparison-table img{
+  width: 20%;
+}
+#suggestion img{
+  width: 13%;
 }
 
 /* --- Institucional e Sobre --- */
@@ -232,74 +248,115 @@ header .logo {
   max-width: 1800px;
   margin: 0 auto;
 }
+.section-institutional-top,
+.section-institutional-down,
+.section-aboutus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 6rem 8rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
 
+/* Cores de fundo */
 .institutional-top-container {
-  background: var(--color-secondary);
+  background: var(--color-primary); /* laranja */
   color: #edf2f6;
-}
-.institutional-down-container {
-  background: var(--color-primary);
-  color: #edf2f6;
-}
-.institutional-aboutus-container {
-  background: #f0f3f4;
-  color: #717171;
 }
 
+.institutional-down-container {
+  background: var(--color-secondary); /* tom mais escuro de laranja */
+  color: #edf2f6;
+}
+
+/* Textos */
 .left-institutional,
 .right-institutional,
 .left-aboutus {
-  margin-left: 120px;
+  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1.5rem;
-}
-
-.right-institutional-fineline p {
-  max-width: 500px;
 }
 
 .left-institutional-title h1,
 .right-institutional-title h1,
-.left-aboutus-title h1 {
-  font-size: 2.6rem;
+.left-aboutus-title h1{
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
   max-width: 600px;
 }
-.left-aboutus-title h1 {
-  color: var(--color-primary);
+
+.left-institutional-fineline p,
+.right-institutional-fineline p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  line-height: 1.6;
 }
 
-.aboutus-more a {
-  color: var(--color-primary);
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.aboutus-more a:hover {
-  text-decoration: underline;
-}
-
+/* Imagens */
 .right-institutional-image,
-.left-institutional-image,
+.left-institutional-image
 .right-aboutus-image {
+  flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .right-institutional-image img,
 .left-institutional-image img,
 .right-aboutus-image img {
-  max-width: 75%;
+  width: 85%;
+  height: auto;
+  border-radius: 30px;
   object-fit: cover;
-  transition: opacity 0.5s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .right-institutional-image img:hover,
 .left-institutional-image img:hover,
-.right-aboutus-image img:hover {
-  opacity: 0.7;
+.right-aboutus-image img:hover{
+  transform: scale(1.03);
+  opacity: 0.9;
   cursor: pointer;
 }
+
+.institutional-aboutus-container {
+  background: #f0f3f4;
+  color: #717171;
+}
+
+.left-aboutus-title h1 {
+  color: var(--color-primary);
+}
+.aboutus-more{
+  display: flex;
+  background-color: var(--color-primary);
+  gap: 20px;
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  align-items: center;
+  
+}
+.aboutus-more a {
+  color: var(--color-white);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 20px;
+  
+}
+.aboutus-more a:hover {
+  text-decoration: underline;
+}
+
+
 
 /* --- Planos --- */
 .plans {

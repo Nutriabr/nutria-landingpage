@@ -11,7 +11,9 @@
 
 <body>
   <header>
-    <img src="./assets/images/logo.svg" alt="Logo Nutria" class="logo">
+    <a href="index.html" class="logo">
+      <img src="./assets/images/logo.svg" alt="Logo Nutria" >
+    </a>
     <div class="hamburguer" id="hamburguer">
       <span></span>
       <span></span>
@@ -19,10 +21,12 @@
     </div>
     <nav class="navbar" id="navbar">
       <ul>
+        <li><a href="#title-hero">Início</a></li>
         <li><a href=" #features-title">Funcionalidades</a></li>
         <li><a href="#plans-section">Planos e Preços</a></li>
         <li><a href="./pages/sobre.html">Sobre nós</a></li>
         <li><a href="#contact-section">Contato</a></li>
+        <li id="download-app"><a href="">Baixar App</a></li>
       </ul>
 
       <div class="flags-translate-options">
@@ -36,7 +40,7 @@
     <section class="hero-section">
       <div class="hero-container">
         <div class="hero-text-content">
-          <h1>
+          <h1 id="title-hero">
             Automatize a criação de <span class="highlight">tabelas nutricionais</span> com agilidade, precisão e segurança.
           </h1>
           <p>
@@ -60,62 +64,64 @@
       <h2 id="features-title">Tudo que você precisa em um só lugar.</h2>
       <div>
         <div class="features-grid">
-          <article id="reverse-process" class="features-ind">
-            <!-- <img src="./assets/images/reverse_process_icon.svg" alt="Ícone Processo Inverso"> -->
-            <h3>Processo Inverso</h3>
-            <p>Saiba a quantidade de ingredientes necessário para o desenvolvimento de um produto com base em sua tabela
-              nutricional. </p>
+          <article id="create-tables" class="features-ind">
+            <img class="img-features" src="/assets/images/icon_criacao_tabela.svg" alt="Icon Criação de Tabelas">
+            <h3>Criar Tabelas</h3>
+            <p>A tabela nutricional apresenta a quantidade de energia e nutrientes de um alimento, 
+              com base na receita e nas normas da ANVISA, auxiliando o consumidor a compreender calorias, 
+              carboidratos, proteínas, gorduras, fibras e sódio por porção.</p>
           </article>
 
           <article id="table-exports" class="features-ind">
-            <!-- <img src="./assets/images/export_tables_icon.svg" alt="Ícone Exportar Tabelas"> -->
+            <img class="img-features" src="/assets/images/icon_exportar_tabela.svg" alt="Icon Exportação de Tabelas">
             <h3>Exportar Tabelas</h3>
-            <p>Facilitamos a exportação das tabelas criadas para PDF ou Excel, facilitando o compartilhamento e a
-              documentação pelo app.</p>
+            <p>Facilitamos a exportação das tabelas criadas para PDF ou Excel, facilitando o 
+              compartilhamento e a documentação pelo app.</p>
           </article>
 
           <article id="receips-history" class="features-ind">
-            <!-- <img src="./assets/images/recipe_history_icon.svg" alt="Ícone Histórico de Receitas"> -->
+            <img class="img-features" src="/assets/images/icon_historico_receita.svg" alt="Icon Histórico de Receitas">
             <h3>Histórico de Receitas</h3>
-            <p>Armazenamento de todas as receitas e tabelas em um histórico acessível no aplicativo, permitindo que a
-              indústria recupere versões anteriores, faça comparações e acompanhe a evolução dos dados.</p>
-          </article>
-          <article id="receips-history" class="features-ind">
-            <!-- <img src="./assets/images/recipe_history_icon.svg" alt="Ícone Histórico de Receitas"> -->
-            <h3>Histórico de Receitas</h3>
-            <p>Armazenamento de todas as receitas e tabelas em um histórico acessível no aplicativo, permitindo que a
-              indústria recupere versões anteriores, faça comparações e acompanhe a evolução dos dados.</p>
-          </article>
-          <article id="receips-history" class="features-ind">
-            <!-- <img src="./assets/images/recipe_history_icon.svg" alt="Ícone Histórico de Receitas"> -->
-            <h3>Histórico de Receitas</h3>
-            <p>Armazenamento de todas as receitas e tabelas em um histórico acessível no aplicativo, permitindo que a
-              indústria recupere versões anteriores, faça comparações e acompanhe a evolução dos dados.</p>
-          </article>
-          <article id="receips-history" class="features-ind">
-            <!-- <img src="./assets/images/recipe_history_icon.svg" alt="Ícone Histórico de Receitas"> -->
-            <h3>Histórico de Receitas</h3>
-            <p>Armazenamento de todas as receitas e tabelas em um histórico acessível no aplicativo, permitindo que a
-              indústria recupere versões anteriores, faça comparações e acompanhe a evolução dos dados.</p>
+            <p>Armazene todas as receitas e tabelas em um histórico acessível no aplicativo, 
+              permitindo que a indústria recupere versões anteriores, faça comparações e acompanhe a 
+              evolução dos dados.</p>
           </article>
 
-          <article id="regulamentations" class="features-ind">
-            <!-- <img src="./assets/images/regulamentations_icon.svg" alt="Ícone Regulamentações"> -->
-            <h3>Conformidade com as Regulamentações</h3>
-            <p>Seguimos rigorosamente a Instrução Normativa 75 de 2020 e RDC 429/2020.</p>
+          <article id="reverse-process" class="features-ind">
+            <img class="img-features" src="/assets/images/icon_processo_inverso.svg" alt="Icon Processo de Inverso">
+            <h3>Processo Inverso</h3>
+            <p>Saiba a quantidade de ingredientes de um produto com base em sua tabela nutricional. </p>
           </article>
 
-          <article id="ingredients-database" class="features-ind">
-            <!-- <img src="./assets/images/register_ingredients_icon.svg" alt="Ícone Tabela Nutricional"> -->
+          <article id="ingredient-registration" class="features-ind">
+            <img class="img-features" src="/assets/images/icon_cadastro_ingrediente.svg" alt="Icon Cadastro de Ingredientes">           
             <h3>Cadastro de Ingredientes</h3>
             <p>Cadastre sua matéria prima em nosso banco de dados para o desenvolvimento de seu produto.</p>
           </article>
 
-          <article id="checklist" class="features-ind">
-            <!-- <img src="./assets/images/checklist_icon.svg" alt="Ícone Checklist"> -->
-            <h3>Checklist</h3>
-            <p>Checklist interativo para apoiar o desenvolvimento de produtos alimentícios, com foco na criação da
-              tabela nutricional, formulação técnica e boas práticas de P&D.</p>
+          <article id="chat-bot" class="features-ind">
+            <img class="img-features" src="/assets/images/icon_chat_bot.svg" alt="Icon ChatBot">           
+            <h3>Chatbot</h3>
+            <p>Faça perguntas ao Chatbot para melhorar seus produtos, trocar ingredientes e/ou quantidades 
+              do produto para você, etc.</p>
+          </article>
+
+          <article id="comparison-table" class="features-ind">
+            <img class="img-features" src="/assets/images/icon_comparacao_tabela.svg" alt="Icon Comparação de Tabelas">            
+            <h3>Comparação de Tabelas</h3>
+            <p>Compare tabelas já criadas, uma ao lado da outra para facilitar.</p>
+          </article>
+
+          <article id="suggestion" class="features-ind">
+            <img class="img-features" src="/assets/images/icon_sugestao.svg" alt="Icon Sugestão">            
+            <h3>Sugestões</h3>
+            <p>Sugestões de de ingredientes mais saudáveis para melhorar seu produto.</p>
+          </article>
+
+          <article id="reformulate-table" class="features-ind">
+            <img class="img-features" src="/assets/images/icon_reformular_tabela.svg" alt="Icon Reformalação de Tabelas"> 
+            <h3>Reformular Tabelas Prontas</h3>
+            <p>Reformule tabelas prontas, adicionando ou retirando ingredientes e/ou quantidades de ingredientes.</p>
           </article>
         </div>
     </section>
@@ -134,7 +140,10 @@
             estudando e pensando todos os dias para entregar a melhor solução para você e seu negócio.
           </p>
         </article>
-        <p class="aboutus-more"><a href="/pages/sobre.html">Saiba Mais</a></p>
+        <div class="aboutus-more" >
+          <p><a href="/pages/sobre.html">Saiba Mais</a></p>
+          <img claas="arrow" src="/assets//images/arrow.svg" alt="Seta Saiba Mais">
+        </div>
       </div>
       <article class="right-aboutus-image">
         <img src="/assets/images/right-side-aboutus.png" alt="Analise de alimento">
@@ -142,7 +151,26 @@
     </section>
 
     <div class="institutional-top-container">
-    <section class="section-institutional-top">
+      <section class="section-institutional-top">
+        <div class="left-institutional">
+          <div class="left-institutional-title">
+            <h1>Reduza custos e retrabalho</h1>
+          </div>
+          <article class="left-institutional-fineline">
+            <p>
+              Sem uma ferramenta prática, conectar ingredientes e quantidades a tabelas nutricionais gera retrabalho e
+              desperdício. Nosso app faz isso automaticamente.
+            </p>
+          </article>
+        </div>
+        <div class="right-institutional-image">
+          <img src="/assets/images/right-side-institucional.png" alt="Analise de alimento">
+        </div>
+      </section>
+      </div>
+    
+    <div class="institutional-down-container">
+    <section class="section-institutional-down">
       <div class="left-institutional-image">
         <img src="/assets/images/left-side-institucional.png" alt="Engenheira de alimentos">
       </div>
@@ -153,33 +181,15 @@
         </div>
         <article class="right-institutional-fineline">
           <p>
-            Automatizamos cálculos complexos, transformando um processo manual e sujeito a erros em uma geração de
-            tabelas nutricionais rápida e confiável para auxiliar sua equipe de P&D.
+            Automatizamos cálculos complexos, transformando um processo manual e 
+            sujeito a erros em uma geração de tabelas nutricionais rápida e confiável 
+            para auxiliar sua  equipe de P&D.
           </p>
         </article>
       </div>
     </section>
     </div>
-
-    <div class="institutional-down-container">
-    <section class="section-institutional-down">
-      <div class="left-institutional">
-        <div class="left-institutional-title">
-          <h1>Reduza custos e retrabalho</h1>
-        </div>
-        <article class="left-institutional-fineline">
-          <p>
-            Sem uma ferramenta prática, conectar ingredientes e quantidades a tabelas nutricionais gera retrabalho e
-            desperdício. Nosso app faz isso automaticamente.
-          </p>
-        </article>
-      </div>
-      <div class="right-institutional-image">
-        <img src="/assets/images/right-side-institucional.png" alt="Analise de alimento">
-      </div>
-    </section>
-    </div>
-    
+ 
 
     <!-- PLANS SECTION -->
     <section class="plans" id="plans-section">
