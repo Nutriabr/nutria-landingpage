@@ -1,366 +1,360 @@
-/* Importação de fonte */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap");
+ /* Importação de fonte */
+ @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap");
 
-/* --- Variáveis de Cor --- */
-:root {
-  --color-primary: #e65c00;
-  --color-secondary: #f67427;
-  --color-dark: #2c3036;
-  --color-text-dark: #1f242b;
-  --color-text-light: #808080;
-  --color-white: #ffffff;
+ /* --- Variáveis de Cor --- */
+ :root {
+   --color-primary: #e65c00;
+   --color-secondary: #f67427;
+   --color-dark: #2c3036;
+   --color-text-dark: #1f242b;
+   --color-text-light: #808080;
+   --color-white: #ffffff;
+ }
+ 
+ /* Reset básico */
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ html {
+   scroll-behavior: smooth;
+ }
+ 
+ body {
+   font-family: "Inter", sans-serif;
+   line-height: 1.6;
+   color: var(--color-text-dark);
+   background: var(--color-white);
+ }
+ 
+ /* /* HEADER */
+  header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 1rem 4rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid #e6e6e6;
+   background-color: var(--color-white);
+   z-index: 10;
+ }
+ 
+ header .logo {
+   width: 120px;
+   max-width: 20%;
+ }
+ 
+ .hamburguer {
+   display: none;
+   flex-direction: column;
+   gap: 5px;
+   cursor: pointer;
+ }
+ 
+ .hamburguer span {
+   width: 25px;
+   height: 3px;
+   background: var(--color-primary);
+   border-radius: 2px;
+   transition: 0.3s ease;
+ }
+ 
+ 
+ .navbar,
+ .navbar ul {
+   display: flex;
+   gap: 2rem;
+   list-style: none;
+ }
+ 
+ .navbar a {
+   text-decoration: none;
+   color: var(--color-text-light);
+   font-weight: 400;
+   transition: color 0.3s ease;
+ }
+ 
+ .navbar a:hover {
+   color: var(--color-primary);
+ }
+ 
+ .flags-translate-options img {
+   width: 24px;
+   height: 24px;
+   margin-left: 0.5rem;
+   cursor: pointer;
+ }
+ 
+ .navbar.active {
+   position: absolute;
+   top: 70px;
+   left: 0;
+   width: 100%;
+   flex-direction: column;
+   background: var(--color-white);
+   border-bottom: 1px solid var(--color-text-light);
+   padding: 1rem;
+ }
+ 
+ .hamburguer.open span:nth-child(1) {
+   transform: rotate(45deg) translate(5px, 5px);
+ }
+ .hamburguer.open span:nth-child(2) {
+   opacity: 0;
+ }
+ .hamburguer.open span:nth-child(3) {
+   transform: rotate(-45deg) translate(5px, -5px);
+ } 
+ 
+ /* MAIN */
+ /* HERO */
+ .hero-section-nutria{
+   background-image:
+   linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+   url("/assets/images/Time Nutria4.png");
+   background-size: cover;
+   position: relative;
+   width: 100%;
+   height: 90vh; 
+   display: flex;
+   justify-content: center; 
+   align-items: center;    
+   text-align: center;    
+ }
+ 
+ .hero-text-conteiner-nutria{
+   color: var(--color-white);
+   font-size: 20px;
+   margin-bottom: 350px;
+ }
+ .skill{
+   position: relative;
+   text-align: center;
+   margin-top: 5vh;
+   color: var(--color-text-light);
+ }
+ .skill h1{
+   color: var(--color-primary);
+ }
+ .card, .card-beliefs{
+   flex: 0 0 calc(25% - 20px);
+   overflow: hidden;
+   border-radius: 15px;
+ }
+ .content-skill{
+   width: 100%;
+   text-align: left;
+ }
+ #atDono{
+   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+   url(/assets/images/atDono.png) ;
+ }
+ #determinacao{
+   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+   url(/assets/images/determinacao.png) ;
+ }
+ #disciplina{
+   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+   url(/assets/images/disciplina.png) ;
+ }
+ #disponib{
+   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+   url(/assets/images/disponib.png) ;
+ }
+ #franqueza{
+   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+   url(/assets/images/franqueza.png) ;
+ }
+ #humildade{
+   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+   url(/assets/images/humildade.png) ;
+ }
+ #simplicidade{
+   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+   url(/assets/images/simplicidade.png) ;
+ }
+ 
+ .image-skill{
+   position: relative;
+   height: 30vh;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+   border-radius: 15px;
+ }
+ .image-skill h3{
+   color: var(--color-white); 
+   margin-top: 10px;
+   font-size:25px;
+ }
+ .beliefs{
+   background-color: var(--color-primary);
+   color: white;
+ }
+ .card-beliefs{
+   margin-top: 10px;
+   width: 200%;
+   height: 180px;
+   border: solid 1px var(--color-white);
+   display: flex;
+   align-items: center; 
+   justify-content: center;
+   text-align: center;
+  
+ }
+.hero-container-beliefs h1{
+  margin-left: 70px;
+  margin-top: 20px;
 }
-
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  line-height: 1.6;
-  color: var(--color-text-dark);
-  background: var(--color-white);
-}
-
-/* /* HEADER */
- header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1rem 4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #e6e6e6;
-  background-color: var(--color-white);
-  z-index: 10;
-}
-
-header .logo {
-  width: 120px;
-  max-width: 20%;
-}
-
-.hamburguer {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-}
-
-.hamburguer span {
-  width: 25px;
-  height: 3px;
-  background: var(--color-primary);
-  border-radius: 2px;
-  transition: 0.3s ease;
-}
-
-
-.navbar,
-.navbar ul {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: var(--color-text-light);
-  font-weight: 400;
-  transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-  color: var(--color-primary);
-}
-
-.flags-translate-options img {
-  width: 24px;
-  height: 24px;
-  margin-left: 0.5rem;
-  cursor: pointer;
-}
-
-.navbar.active {
-  position: absolute;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  flex-direction: column;
-  background: var(--color-white);
-  border-bottom: 1px solid var(--color-text-light);
-  padding: 1rem;
-}
-
-.hamburguer.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-.hamburguer.open span:nth-child(2) {
-  opacity: 0;
-}
-.hamburguer.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-} 
-
-/* MAIN */
-/* HERO */
-.hero-section-nutria{
-  background-image:
-  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-  url("/assets/images/Time Nutria4.png");
-  background-size: cover;
-  position: relative;
-  width: 100%;
-  height: 90vh; 
-  display: flex;
-  justify-content: center; 
-  align-items: center;    
-  text-align: center;    
-}
-
-.hero-text-conteiner-nutria{
+ .card-beliefs h3{
   color: var(--color-white);
   font-size: 20px;
-  margin-bottom: 350px;
-}
-.skill{
-  position: relative;
-  text-align: center;
-  margin-top: 5vh;
-  color: var(--color-text-light);
-}
-.skill h1{
-  color: var(--color-primary);
-}
-.card{
-  flex: 0 0 calc(25% - 20px);
-  overflow: hidden;
-  border-radius: 15px;
-}
-.content-skill{
-  width: 100%;
-  text-align: left;
-}
-#atDono{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url(/assets/images/atDono.png) ;
-}
-#determinacao{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-  url(/assets/images/determinacao.png) ;
-}
-#disciplina{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url(/assets/images/disciplina.png) ;
-}
-#disponib{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url(/assets/images/disponib.png) ;
-}
-#franqueza{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-  url(/assets/images/franqueza.png) ;
-}
-#humildade{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url(/assets/images/humildade.png) ;
-}
-#simplicidade{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-  url(/assets/images/simplicidade.png) ;
-}
+ }
 
-.image-skill{
-  position: relative;
-  height: 30vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  border-radius: 15px;
-}
-.image-skill h3{
-  color: var(--color-white); 
-  margin-top: 10px;
-  font-size:25px
-}
-.beliefs{
-  background-color: var(--color-primary);
-  position: relative;
-  text-align: center;
-}
-.hero-container-beliefs h2{
-  color: var(--color-white);
-  text-align: left;
-  font-size:25px;
-  position: relative;
-  top: 20px;
-}
-.hero-container-beliefs{
-  margin: 10vh;
-
-}
-.content-beliefs{
-  margin-top: 40px;
-  list-style: none; 
-  display: flex;
-  gap: 20px; 
-  padding: 0;
-
-}
-#beliefs-li{
-  border: 1px solid var(--color-white);      
-  border-radius: 10px;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  display: flex;              
-  align-items: center;
-  justify-content: center;
-  height: 20vh;             
-  box-sizing: border-box; 
-  width: 200%;
-}
-.carousel-container {
-  overflow: hidden; 
-  width: 100%;
-  position: relative;
-  display: flex; 
-}
-
-.carousel-track {
-  margin: 8vh;
-  display: flex; 
-  gap: 40px; 
-  transition: transform 0.5s ease; 
-}
-.carousel-track > * {
-  flex: 0 0 auto;           
-  width: 280px;             
-}
-.cards-skill, .content-beliefs, .conteiner-team {
-  flex: 0 0 auto; 
-  width: 280px;   
-}
-.carousel button.prev, .carousel button.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.5);
-  color: var(--color-primary);
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
-  border-radius: 90%;
-  font-size: 20px;
-}
-
-.carousel button.prev {
-  left: 10px;
-}
-
-.carousel button.next {
-  right: 10px;
-}
-.instituto{
-  background-color: var(--color-secondary);
-  color: var(--color-white);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.hero-container-instituto{
-  flex: 1;
-  max-width: 60%;
-  margin: 10vh;
-}
-.hero-container-instituto h2{
-  font-size:25px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.hero-container-instituto p{ 
-  line-height: 1.6;
-  font-size: 18px;
-}
-.hero-container-instituto-img {
-  flex: 1;
-  display: flex;
-  width: 200px;
-  justify-content: center;
-}
-.hero-conteiner-team h2{
-  color: var(--color-primary);
-  text-align: center;
-  margin-top: 50px;
-
-}
-.class img{
-  width: 150px;
-  height: 150px;
-  border-radius: 300px;
-}
-.conteiner-team{
-  display: flex;
-  gap: 50px;
-  margin-top: 5vh;
-}
-
-footer {
-  padding: 3rem 6rem;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-color: #1f242b;
-}
-
-.footer-left {
-  display: flex;
-}
-
-.footer-column {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin-right: 40px;
-  margin-bottom: 1rem;
-}
-.footer-column h4 {
-  font-size: 13px;
-  color: #cdcdcd;
-}
-.footer-column a {
-  font-size: 14px;
-  color: #f2f2f2;
-  text-decoration: none;
-}
-.footer-column a:hover {
-  text-decoration: underline;
-}
-.footer-right {
-  text-align: left;
-}
-.footer-right .logo {
-  font-size: 24px;
-  color: var(--color-primary);
-  font-weight: bold;
-  margin-bottom: 6px;
-}
-.footer-right p {
-  font-size: 12px;
-  color: #fff;
-}
+ .carousel-container {
+   overflow: hidden; 
+   width: 100%;
+   position: relative;
+   display: flex; 
+ }
+ 
+ .carousel-track {
+   margin: 8vh;
+   display: flex; 
+   gap: 40px; 
+   transition: transform 0.5s ease; 
+ }
+ .carousel-track > * {
+   flex: 0 0 auto;           
+   width: 280px;             
+ }
+ .cards-skill, .content-beliefs, .conteiner-team {
+   flex: 0 0 auto; 
+   width: 280px;   
+ }
+ .carousel button.prev, .carousel button.next {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: rgba(255, 255, 255, 0.5);
+   color: var(--color-primary);
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   z-index: 10;
+   border-radius: 90%;
+   font-size: 20px;
+ }
+ 
+ .carousel button.prev {
+   left: 10px;
+ }
+ 
+ .carousel button.next {
+   right: 10px;
+ }
+ .instituto{
+   background-color: var(--color-secondary);
+   color: var(--color-white);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ .hero-container-instituto{
+   flex: 1;
+   max-width: 60%;
+   margin: 10vh;
+ }
+ .hero-container-instituto h2{
+   font-size:25px;
+   font-weight: 700;
+   margin-bottom: 20px;
+ }
+ .hero-container-instituto p{ 
+   line-height: 1.6;
+   font-size: 18px;
+ }
+ .hero-container-instituto-img {
+   flex: 1;
+   display: flex;
+   width: 200px;
+   justify-content: center;
+ }
+ .hero-conteiner-team h2{
+   color: var(--color-primary);
+   text-align: center;
+   margin-top: 50px;
+ }
+ .team img{
+   width: 150px;
+   height: 150px;
+   border-radius: 300px;
+ }
+ .team{
+   text-align: center;
+ }
+ .team p{
+   color: var(--color-primary);
+   font-weight: 500;
+ }
+ .conteiner-team{
+   display: flex;
+   gap: 5px;
+   margin-top: 5vh;
+   margin-left: 5vh;
+ }
+ 
+ footer {
+   padding: 3rem 6rem;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   background-color: #1f242b;
+ }
+ 
+ .footer-left {
+   display: flex;
+ }
+ 
+ .footer-column {
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+   margin-right: 40px;
+   margin-bottom: 1rem;
+ }
+ .footer-column h4 {
+   font-size: 13px;
+   color: #cdcdcd;
+ }
+ .footer-column a {
+   font-size: 14px;
+   color: #f2f2f2;
+   text-decoration: none;
+ }
+ .footer-column a:hover {
+   text-decoration: underline;
+ }
+ .footer-right {
+   text-align: left;
+ }
+ .footer-right .logo {
+   font-size: 24px;
+   color: var(--color-primary);
+   font-weight: bold;
+   margin-bottom: 6px;
+ }
+ .footer-right p {
+   font-size: 12px;
+   color: #fff;
+ } 
 
 /* --- Responsividade --- */
 @media (max-width: 900px) {
@@ -398,51 +392,14 @@ footer {
     max-width: 300px;
   }
 
-  .section-institutional-top,
-  .section-institutional-down,
-  .section-aboutus {
-    grid-template-columns: 1fr;
+  .instituto {
+    flex-direction: column;
     text-align: center;
   }
 
-  .right-aboutus-image,
-  .right-institutional-image,
-  .left-institutional-image {
-    display: none;
-  }
-
-  .features-grid,
-  .plans-grid {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 90%;
-    gap: 1rem;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-  }
-
-  .plans-grid {
-    width: 100%;
-    padding: 50px;
-    gap: 2rem;
-  }
-
-  .features-grid::-webkit-scrollbar,
-  .plans-grid::-webkit-scrollbar {
-    display: none;
-  }
-
-  .features-ind,
-  .plans-ind {
-    scroll-snap-align: start;
-  }
-
-  .left-institutional,
-  .right-institutional,
-  .left-aboutus {
-    margin-left: 0;
-    text-align: left;
+  .hero-container-instituto {
+    max-width: 100%;
+    margin: 2rem;
   }
 
   .footer-left {
@@ -453,5 +410,28 @@ footer {
   .footer-right {
     margin-top: 50px;
     text-align: left;
+  }
+
+  .carousel-track {
+    gap: 20px;
+  }
+
+  .skill .card,
+  .beliefs .card,
+  .team {
+    flex: 0 0 250px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .skill .card,
+  .beliefs .card,
+  .team {
+    flex: 0 0 220px;
+  }
+
+  .carousel-track {
+    gap: 15px;
   }
 }
