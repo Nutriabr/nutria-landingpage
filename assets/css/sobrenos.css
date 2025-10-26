@@ -9,6 +9,7 @@
    --color-text-dark: #1f242b;
    --color-text-light: #808080;
    --color-white: #ffffff;
+   --color-scroll: #9E9E9E;
  }
  
  /* Reset básico */
@@ -239,27 +240,28 @@
    flex: 0 0 auto; 
    width: 280px;   
  }
- .carousel button.prev, .carousel button.next {
-   position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
-   background-color: rgba(255, 255, 255, 0.5);
-   color: var(--color-primary);
-   border: none;
-   padding: 10px;
-   cursor: pointer;
-   z-index: 10;
-   border-radius: 90%;
-   font-size: 20px;
- }
- 
- .carousel button.prev {
-   left: 10px;
- }
- 
- .carousel button.next {
-   right: 10px;
- }
+/* barra de indicadores abaixo */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  
+}
+
+.carousel-indicators .dot {
+  width: 28px;
+  height: 4px;
+  background:var(--color-scroll);
+  border-radius: 2px;
+  transition: width 280ms ease, background 280ms ease;
+  margin-bottom: 20px;
+}
+
+.carousel-indicators .dot.active {
+  background:var(--color-secondary);
+  width: 40px;
+}
  .instituto{
    background-color: var(--color-secondary);
    color: var(--color-white);
@@ -272,7 +274,7 @@
    max-width: 60%;
    margin: 10vh;
  }
- .hero-container-instituto h2{
+ .hero-container-instituto h1{
    font-size:25px;
    font-weight: 700;
    margin-bottom: 20px;
@@ -287,7 +289,7 @@
    width: 200px;
    justify-content: center;
  }
- .hero-conteiner-team h2{
+ .hero-conteiner-team h1{
    color: var(--color-primary);
    text-align: center;
    margin-top: 50px;
@@ -306,7 +308,7 @@
  }
  .conteiner-team{
    display: flex;
-   gap: 5px;
+   gap: 1px;
    margin-top: 5vh;
    margin-left: 5vh;
  }
