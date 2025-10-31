@@ -371,6 +371,7 @@ header .logo {
 #plans-subtitle {
   color: #787878;
   margin: 10px 0 40px;
+  font-size: 20px;
 }
 .plans-functions{
   margin-bottom: 20px;
@@ -431,16 +432,9 @@ header .logo {
   color: var(--color-primary);
 }
 
-.btn-demonstration {
-  border-radius: 50px;
-  font-size: 0.9em;
-  text-decoration: none;
-  transition: 0.3s ease;
-  padding: 10px 60px 10px 60px;
-  width: 100%;
-  margin-bottom: 32px;
+#profissional-plan .plans-license, #basic-plan .plans-license{
+  color: var(--color-white);
 }
-
 
 /* --- Contact --- */
 .contact-container {
