@@ -366,10 +366,14 @@ header .logo {
 }
 #plans-title {
   font-size: 2rem;
+  color: var(--color-text-dark);
 }
 #plans-subtitle {
   color: #787878;
   margin: 10px 0 40px;
+}
+.plans-functions{
+  margin-bottom: 20px;
 }
 .plans-grid {
   display: grid;
@@ -437,19 +441,6 @@ header .logo {
   margin-bottom: 32px;
 }
 
-#basic-plan .btn-demonstration {
-  border: 1px solid #e8e8e8;
-  color: #e8e8e8;
-}
-#profissional-plan .btn-demonstration {
-  background: #e8e8e8;
-  color: var(--color-primary);
-  border: 1px solid #ee7026;
-}
-#intermediary-plan .btn-demonstration {
-  border: 1px solid #ee7026;
-  color: var(--color-primary);
-}
 
 /* --- Contact --- */
 .contact-container {
