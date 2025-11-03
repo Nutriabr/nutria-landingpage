@@ -202,8 +202,8 @@ header .logo {
   text-align: center;
 }
 .hero-container-beliefs h1 {
-  margin-left: 70px;
-  margin-top: 20px;
+  padding-top: 3rem;
+  text-align: center;
 }
 .card-beliefs h3 {
   color: var(--color-white);
