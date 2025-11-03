@@ -112,11 +112,6 @@ header .logo {
   display: flex;
   gap: 16px;
   list-style: none;
-  flex-direction: column;
-}
-
-.navbar ul {
-  margin-left: 12px;
 }
 
 .navbar a {
@@ -582,6 +577,10 @@ footer {
 
   .navbar {
     display: none;
+  }
+
+  .navbar ul {
+    flex-direction: column;
   }
 
   .navbar.active {
